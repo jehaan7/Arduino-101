@@ -12,7 +12,7 @@ void loop() {
   // Add the product of 1, slope to brightness
   brightness += (1 * slope);
 
-  if (brightness > 254) {       // Brightness is at MIN
+  if (brightness > 254) {       // Brightness is at MAX
     slope = -1;                 // Change slope to -1
   } else if (brightness < 1) {  // Brightness is at MIN
     slope = 1;                  // Change slope to +1
